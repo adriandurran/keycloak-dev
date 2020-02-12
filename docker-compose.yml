@@ -1,9 +1,9 @@
 version: "3.7"
 
 services:
-  webgen-keycloak:
+  dev-keycloak:
     image: jboss/keycloak
-    container_name: webgen-auth
+    container_name: dev-keycloak
     restart: unless-stopped
     environment:
       KEYCLOAK_USER: admin
