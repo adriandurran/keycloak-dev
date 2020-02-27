@@ -10,3 +10,8 @@ services:
       KEYCLOAK_PASSWORD: password
     ports:
       - 8080:8080
+    networks:
+      - pipeline_pipeline-net
+networks:
+  pipeline_pipeline-net:
+    external: true
