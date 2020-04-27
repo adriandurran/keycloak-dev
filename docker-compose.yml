@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   dev-keycloak:
-    image: jboss/keycloak
+    image: jboss/keycloak:8.0.2
     container_name: dev-keycloak
     restart: unless-stopped
     environment:
